@@ -1,0 +1,25 @@
+{
+  "name": "browserstack-examples-protractor",
+  "version": "0.0.1",
+  "readme": "Protractor Integration with [BrowserStack](https://www.browserstack.com) sample demo canonical app",
+  "description": "This repository showcases the BrowserStack integration features with protractor using the BrowserStack sample demo canonical app",
+  "scripts": {
+    "search": "./node_modules/.bin/protractor resources/conf/test.conf.js --search",
+    
+    "on-prem": "./node_modules/.bin/protractor resources/conf/test.conf.js --on-prem",
+    "on-prem-suite": "./node_modules/.bin/protractor resources/conf/test.conf.js --on-prem-suite",
+    "docker": "./node_modules/.bin/protractor resources/conf/test.conf.js --docker",
+    "docker-parallel": "./node_modules/.bin/protractor resources/conf/test.conf.js --docker-parallel",
+    "bstack-single": "./node_modules/.bin/protractor resources/conf/test.conf.js --disableChecks --bstack-single",
+    "bstack-local": "./node_modules/.bin/protractor resources/conf/test.conf.js --bstack-local",
+    "bstack-local-parallel": "./node_modules/.bin/protractor resources/conf/test.conf.js --bstack-local-parallel",
+    "bstack-local-parallel-browsers": "./node_modules/.bin/protractor resources/conf/test.conf.js --bstack-local-parallel-browsers",
+    "bstack-parallel": "./node_modules/.bin/protractor resources/conf/test.conf.js --bstack-parallel",
+    "bstack-parallel-browsers": "./node_modules/.bin/protractor resources/conf/test.conf.js --bstack-parallel-browsers"
+  },
+  "dependencies": {
+    "browserstack-local": "^1.0.0",
+    "csv-parse": "^4.0.0",
+    "protractor": "^7.0.0"
+  }
+}
