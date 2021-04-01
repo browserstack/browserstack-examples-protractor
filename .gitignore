@@ -1,0 +1,4 @@
+node_modules
+local.log
+src/test/suites/gsearchtemp/
+src/test/suites/gsearchtemp/*
